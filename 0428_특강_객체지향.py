@@ -10,7 +10,7 @@ class Car():
             self.speed = 100
     
     def brake(self, braks):
-        self.spped -= braks
+        self.speed -= braks
         if (self.speed < 0):
             self.speed = 0
     
@@ -28,8 +28,6 @@ class Animal():
 class Dog(Animal):
     def __init__(self, name, age):
         super().__init__(name,age)
-        self.name = name
-        self.age = age
 
     def speak(self):
         print(self.name + "개 입니다.")
@@ -37,8 +35,6 @@ class Dog(Animal):
 class Cat(Animal):
     def __init__(self, name, age):
         super().__init__(name,age)
-        self.name = name
-        self.age = age
 
     def speak(self):
         print(self.name + "고양이 입니다.")
